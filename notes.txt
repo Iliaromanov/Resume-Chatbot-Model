@@ -1,0 +1,3 @@
+Stemming: Takes word and converts it down to its root word. 
+          Ignoring unnecessary parts of strings to improve accuracy of predicitons
+          eg. Whats => what, there!?!?? => there
