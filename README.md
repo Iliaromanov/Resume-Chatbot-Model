@@ -1,2 +1,2 @@
 # Resume-Chat-Bot
-Python AI Chat Bot for answering questions about me related to my resume
+Simple Python AI Chat Bot for answering questions related to my resume
