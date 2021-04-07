@@ -1,8 +1,21 @@
 {"intents": [
         {"tag": "greeting",
-        "patterns": ["Hi", "Hey there", "Whats up", "hello!", "Good Day"],
+        "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day"],
         "responses": ["Hello!", "Hi there, how can I help?"],
         "context_set": ""
+        },
+        {"tag": "tech skills",
+            "patterns": ["What skills does Ilia have?",
+                         "What does your tech stack look like?", 
+                         "What tools and languages do you know?"
+                        ],
+            "responses": ["Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python and C and has experience using SQL for working with relational databases, and using JavaScript, HTML and CSS for web development."],
+            "context_set": ""
+        },
+        {"tag": "goodbye",
+            "patterns": ["Bye", "Thank you for your help!", "Goodbye"],
+            "responses": ["Glad I could help!", "Bye! You can always send me a chat if you have any further questions."],
+            "context_set": ""
         }
     ]
 }
