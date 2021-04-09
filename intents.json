@@ -1,21 +1,52 @@
 {"intents": [
         {"tag": "greeting",
-        "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day"],
-        "responses": ["Hello!", "Hi there, how can I help?"],
-        "context_set": ""
+         "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day"],
+         "responses": ["Hello!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "about chat-bot",
+         "patterns": ["What is this?", "What do I do?", "What can you do?", "What is Resume Chat-bot?", "Talk about this project"],
+         "responses": ["*Explains project*"],
+         "context_set": ""
+        },
+        {"tag": "general about yourself short", 
+         "patterns": ["Give a quick summary about Ilia",
+                      "Briefly tell me a little bit about yourself",
+                      "Give a short overview of Ilia's experiences and qualifications"
+                     ],
+         "responses": ["Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly trying to learn and add to his skillset. ...",
+                       "Ilia is a passionate and hardworking sofware developer and second year Computer Science student at the University of Waterloo. ..."
+                      ],
+         "context_set": ""
+        },
+        {"tag": "general about yourself long", 
+         "patterns": ["Tell us about Ilia", "Whats Ilia's story?", "Who is Ilia?"],
+         "responses": ["{long} Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly trying to learn and add to his skillset. ...",
+                         "{long} Ilia is a passionate and hardworking sofware developer and second year Computer Science student at the University of Waterloo. ..."
+                      ],
+         "context_set": ""
         },
         {"tag": "tech skills",
-            "patterns": ["What skills does Ilia have?",
-                         "What does your tech stack look like?", 
-                         "What tools and languages do you know?"
-                        ],
-            "responses": ["Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python and C and has experience using SQL for working with relational databases, and using JavaScript, HTML and CSS for web development."],
-            "context_set": ""
+         "patterns": ["What skills does Ilia have?",
+                      "What does your tech stack look like?", 
+                      "What tools and languages do you know?",
+                      "Tell me about your some tools and technologies you use."
+                     ],
+         "responses": ["Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python, including knowledge of a vast array of supported libraries such as Tensorflow, Keras, Pandas, and Numpy for ML/Data Science, and Django and Flask for web development. Ilia is also proficient in C programming and has experience using SQL for working with relational databases such as PostgreSQL and SQLite, and using JavaScript, HTML and CSS for web development."],
+         "context_set": ""
+        },
+        {"tag": "work experience",
+         "patterns": ["What work experience does Ilia have?",
+                      "Projects Ilia has worked on?",
+                      "Talk about your past work or project experience"
+                     ],
+         "responses": ["Ilia loves to pick up new skills challege himself by taking on new projects and other opportunities. Some projects Ilia has worked on include .... {talk abt projects}. Ilia is also starting his first Software Development internship this summer ..."],
+         "context_set": ""
         },
         {"tag": "goodbye",
-            "patterns": ["Bye", "Thank you for your help!", "Goodbye"],
-            "responses": ["Glad I could help!", "Bye! You can always send me a chat if you have any further questions."],
-            "context_set": ""
+         "patterns": ["Bye", "Thank you for your help!", "Goodbye"],
+         "responses": ["Glad I could help!", "Bye! You can always send me a chat if you have any further questions."],
+         "context_set": ""
         }
     ]
 }
