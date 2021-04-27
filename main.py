@@ -90,3 +90,38 @@ try:
 except:
     model.fit(training, output, n_epoch=780, batch_size=8, show_metric=True)
     model.save("model.tflearn")
+
+
+def bag_words(sentence, known_words):
+    bag = []
+
+    sentence_words = nltk.word_tokenize(sentence)
+    sentence_words = [stemmer.stem(word.lower()) for word in sentence_words]
+
+    for new_w in sentence_words:
+        for known_w in known_words:
+            if new_w == known_w:
+                bag.append(1)
+            else:
+                bag.append(0)
+
+    return np.array(bag)
+
+
+def chat():
+    print("Start talking with the bot!\n (type quit to stop)")
+    while True:
+        user = input("You: ")
+        if user.lower() == "quit":
+            break
+        
+        bag = bag_words(user, words)
+        print(bag)
+        result = model.predict([bag])
+        print(result)
+        result_idx = np.argmax(result) # gives index of greates value in result
+        tag = labels[result_idx]
+        print(labels)
+        print(tag)
+
+chat()
