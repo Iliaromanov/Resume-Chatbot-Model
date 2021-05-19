@@ -60,7 +60,7 @@ except:
                 bag.append(0) # 0 if not
 
         output_row = out_empty[:]
-        output_row[labels.index(docs_y[i])] = 1
+        output_row[labels.index(docs_y[i])] += 1
 
         training.append(bag)
         output.append(output_row)
@@ -79,7 +79,7 @@ net = tflearn.input_data(shape=[None, len(training[0])])
 net = tflearn.fully_connected(net, 8) # hidden layer with 8 neurons
 net = tflearn.fully_connected(net, 8) # hidden layer with 8 neurons
 # Output layer has len(Y[0]) neurons (# of unique pattern tags/labels)
-net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
+net = tflearn.fully_connected(net, len(output[0]), activation="relu")
 net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
