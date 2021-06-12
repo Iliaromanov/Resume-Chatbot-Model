@@ -76,10 +76,10 @@ with open('data.pickle', 'wb') as f:
 # Building Neural Net
 # Input layer has len(x[0]) neurons (# of unique words)
 net = tflearn.input_data(shape=[None, len(training[0])])
-net = tflearn.fully_connected(net, 8) # hidden layer with 8 neurons
-net = tflearn.fully_connected(net, 8) # hidden layer with 8 neurons
+net = tflearn.fully_connected(net, 8, activation="relu") # hidden layer with 8 neurons
+net = tflearn.fully_connected(net, 8, activation="relu") # hidden layer with 8 neurons
 # Output layer has len(Y[0]) neurons (# of unique pattern tags/labels)
-net = tflearn.fully_connected(net, len(output[0]), activation="relu")
+net = tflearn.fully_connected(net, len(output[0]), activation="sigmoid")
 net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
