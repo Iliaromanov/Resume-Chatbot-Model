@@ -5,14 +5,16 @@
          "context_set": ""
         },
         {"tag": "about chat-bot",
-         "patterns": ["What is this?", "What do I do?", "What can you do?", "What is Resume Chat-bot?", "Talk about this project"],
+         "patterns": ["What is this?", "What do I do?", "What can you do?", "What is Resume Chat-bot?", "Talk about this project", "How was this made", "What can you tell me"],
          "responses": ["*Explains project*"],
          "context_set": ""
         },
         {"tag": "general about yourself short", 
          "patterns": ["Give a quick summary about Ilia",
                       "Briefly tell me a little bit about yourself",
-                      "Give a short overview of Ilia's experiences and qualifications"
+                      "Give a short overview of Ilia's experiences and qualifications",
+                      "Quickly describe Ilia",
+                      "In short, who is Ilia?"
                      ],
          "responses": ["Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly trying to learn and add to his skillset. ...",
                        "Ilia is a passionate and hardworking sofware developer and second year Computer Science student at the University of Waterloo. ..."
@@ -20,7 +22,7 @@
          "context_set": ""
         },
         {"tag": "general about yourself long", 
-         "patterns": ["Tell us about Ilia", "Whats Ilia's story?", "Who is Ilia?"],
+         "patterns": ["Tell us about Ilia", "Whats Ilia's story?", "Who is Ilia?", "Detailed breakdown of Ilia as a software developer engineer"],
          "responses": ["{long} Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly trying to learn and add to his skillset. ...",
                          "{long} Ilia is a passionate and hardworking sofware developer and second year Computer Science student at the University of Waterloo. ..."
                       ],
@@ -28,24 +30,64 @@
         },
         {"tag": "tech skills",
          "patterns": ["What skills does Ilia have?",
-                      "What does your tech stack look like?", 
+                      "What does your tech stack look like?",
+                      "Ilia's tech stack and programming skills",
                       "What tools and languages do you know?",
-                      "Tell me about your some tools and technologies you use."
+                      "What tools and technologies is Ilia comfortable with",
+                      "Tell me about some tools and technologies you use."
                      ],
-         "responses": ["Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python, including knowledge of a vast array of supported libraries such as Tensorflow, Keras, Pandas, and Numpy for ML/Data Science, and Django and Flask for web development. Ilia is also proficient in C programming and has experience using SQL for working with relational databases such as PostgreSQL and SQLite, and using JavaScript, HTML and CSS for web development."],
+         "responses": ["Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python, including knowledge of a vast array of supported libraries such as OpenCV and Mediapipe for Computer vision, Tensorflow, Keras, Pandas, and Numpy for ML/Data Science, Django and Flask for web development. Ilia is also proficient in C programming and has experience using SQL for working with relational databases such as PostgreSQL, MS SQL Server, Oracle, and Apache HIVE, and using JavaScript, HTML and CSS for web development. Ilia has also been learining Golang and C++ to further expand his skillset."],
          "context_set": ""
+        },
+        {"tag": "projects",
+            "patterns": ["Projects Ilia has worked on?",
+                         "Talk about your past project experience",
+                         "What side projects have you done?",
+                         "Discuss some side projects Ilia has worked on",
+                         "What interesting projects of Ilia's can you tell me about?"
+                        ],
+            "responses": ["Ilia loves to pick up new skills and challege himself by taking on new projects. Some projects Ilia has worked on include .... {talk abt projects}."],
+            "context_set": ""
         },
         {"tag": "work experience",
          "patterns": ["What work experience does Ilia have?",
-                      "Projects Ilia has worked on?",
-                      "Talk about your past work or project experience"
+                      "What is Ilia's experience level",
+                      "Has Ilia had any jobs in the tech industry",
+                      "Discuss Ilia's software development engineering experience",
+                      "What has Ilia done in the software tech industry",
+                      "Where has Ilia worked previously",
+                      "Where does Ilia work",
+                      "Where has Ilia been employed",
+                      "Have you had any software tech related jobs"
                      ],
-         "responses": ["Ilia loves to pick up new skills challege himself by taking on new projects and other opportunities. Some projects Ilia has worked on include .... {talk abt projects}. Ilia is also starting his first Software Development internship this summer ..."],
+         "responses": ["Ilia has had an amazing experience working as a Software Development Co-op at the fintech company Opta Information Intelligence. There he had the ability to learn a multitude of new skills and use many new technologies as well as demonstrate and sharpen his existing capabilities. Some projects Ilia has worked on at Opta include: ....."],
          "context_set": ""
         },
+        {"tag": "contact",
+            "patterns": ["How can we contact Ilia?",
+                         "What is the best way to reach you",
+                         "Where can we reach Ilia",
+                         "How can we continue our discussion with Ilia",
+                         "Ilia contact information",
+                         "Give us Ilia's preferred contact info"
+                        ],
+            "responses": ["Glad I could help!", "Bye! You can always send me a chat if you have any further questions."],
+            "context_set": ""
+        },
         {"tag": "goodbye",
-         "patterns": ["Bye", "Thank you for your help!", "Goodbye"],
-         "responses": ["Glad I could help!", "Bye! You can always send me a chat if you have any further questions."],
+         "patterns": ["Bye",
+                      "Thank you for your help!",
+                      "That'll be all for us, thank you for your help",
+                      "Goodbye",
+                      "Amazing project, very helpfull and useful",
+                      "Great work Ilia, we'll talk to you later"
+                     ],
+         "responses": ["Glad I could help! Feel free to reach out to Ilia to tell him how great this project is :)",
+                       "Bye! You can always send me a chat or reach out to Ilia directly if you have any further questions.",
+                       "Thank you for your time!",
+                       "I hope I've been of use. Have a great rest of your day!",
+                       "Very nice to meet you! We've got a great thing going here, lets keep in touch :)"
+                      ],
          "context_set": ""
         }
     ]
