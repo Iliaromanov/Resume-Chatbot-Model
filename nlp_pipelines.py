@@ -49,6 +49,7 @@ def nltk_POS_lemmatizer(sentence: str) -> List[str]:
 def spacy_nlp(sentence: str) -> List[str]:
     # Initialize 'en_core_web_sm' model, keeping only tagger component needed for lemmatization
     nlp = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
-    doc = [token for token in nlp(sentence) if str(token) not in "?!,."]
+    doc = [token for token in nlp(sentence) 
+           if str(token) not in "?!,." and not (len(str(token)) == 1 and str(token).lower() not in "ia")]
 
     return [str(token.lemma_) for token in doc]
