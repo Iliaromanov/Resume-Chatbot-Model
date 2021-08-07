@@ -24,17 +24,15 @@
                       "Quickly describe Ilia",
                       "In short, who is Ilia?",
                       "Tell us about Ilia",
-                      "Whats Ilia's story?",
                       "Who is Ilia?",
                       "Detailed breakdown of Ilia as a software developer engineer",
                       "In detail tell me about Ilia",
                       "Give a detailed description of Ilia",
                       "Tell us me about yourself",
                       "About yourself",
-                      "Describe Ilia"
+                      "what does Ilia do?"
                      ],
-         "responses": ["Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly learning and adding new skills to his arsenal. Here are some things about Ilia you may find interesting: {button/links to: work exprience, projects, hobbies/interests/extrcurriculars} ..."
-                      ],
+         "responses": ["Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly learning and adding new skills to his arsenal. Here are some things about Ilia you may find interesting: {button/links to: work exprience, projects, hobbies/interests/extrcurriculars} ..."],
          "context_set": ""
         },
         {"tag": "tech skills",
@@ -42,8 +40,14 @@
                       "What does your tech stack look like?",
                       "Ilia's tech stack and programming skills",
                       "What tools and languages do you know?",
+                      "What tools and languages does Ilia know?",
                       "What tools and technologies is Ilia comfortable with",
-                      "Tell me about some tools and technologies you use."
+                      "Tell me about some tools and technologies you use.",
+                      "What does Ilia program in",
+                      "What is Ilia's programming language",
+                      "What are Ilia's skills",
+                      "What skills does Ilia have",
+                      "Ilia's tech skills"
                      ],
          "responses": ["Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python, including knowledge of a vast array of supported libraries such as OpenCV and Mediapipe for Computer vision, Tensorflow, Keras, Pandas, and Numpy for ML/Data Science, Django and Flask for web development. Ilia is also proficient in C programming and has experience using SQL for working with relational databases such as PostgreSQL, MS SQL Server, Oracle, and Apache HIVE, and using JavaScript, HTML and CSS for web development. Ilia has also been learining Golang and C++ to further expand his skillset."],
          "context_set": ""
@@ -55,7 +59,9 @@
                          "Discuss some side projects Ilia has worked on",
                          "What interesting projects of Ilia's can you tell me about?",
                          "What are some side things Ilia has done?",
-                         "Ilia's side projects"
+                         "Ilia's side projects",
+                         "please tell us about Ilia's projects",
+                         "tell us about what Ilia is working on"
                         ],
             "responses": ["Ilia loves to pick up new skills and challege himself by taking on new projects. Some projects Ilia has worked on include .... {talk abt projects}."],
             "context_set": ""
