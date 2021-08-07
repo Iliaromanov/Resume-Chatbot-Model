@@ -22,7 +22,17 @@
          "context_set": ""
         },
         {"tag": "general about yourself long", 
-         "patterns": ["Tell us about Ilia", "Whats Ilia's story?", "Who is Ilia?", "Detailed breakdown of Ilia as a software developer engineer"],
+         "patterns": ["Tell us about Ilia",
+                      "Whats Ilia's story?",
+                      "Who is Ilia?",
+                      "Detailed breakdown of Ilia as a software developer engineer",
+                      "In detail tell me about Ilia",
+                      "Give a detailed description of Ilia",
+                      "Tell us me about yourself",
+                      "About yourself",
+                      "About Ilia long",
+                      "Describe Ilia"
+                    ],
          "responses": ["{long} Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly trying to learn and add to his skillset. ...",
                          "{long} Ilia is a passionate and hardworking sofware developer and second year Computer Science student at the University of Waterloo. ..."
                       ],
@@ -44,7 +54,9 @@
                          "Talk about your past project experience",
                          "What side projects have you done?",
                          "Discuss some side projects Ilia has worked on",
-                         "What interesting projects of Ilia's can you tell me about?"
+                         "What interesting projects of Ilia's can you tell me about?",
+                         "What are some side things Ilia has done?",
+                         "Ilia's side projects"
                         ],
             "responses": ["Ilia loves to pick up new skills and challege himself by taking on new projects. Some projects Ilia has worked on include .... {talk abt projects}."],
             "context_set": ""
@@ -58,7 +70,11 @@
                       "Where has Ilia worked previously",
                       "Where does Ilia work",
                       "Where has Ilia been employed",
-                      "Have you had any software tech related jobs"
+                      "Have you had any software tech related jobs",
+                      "Who is Ilia's current employer?",
+                      "Is Ilia employed?",
+                      "Employment status",
+                      "Does Ilia have a job?"
                      ],
          "responses": ["Ilia has had an amazing experience working as a Software Development Co-op at the fintech company Opta Information Intelligence. There he had the ability to learn a multitude of new skills and use many new technologies as well as demonstrate and sharpen his existing capabilities. Some projects Ilia has worked on at Opta include: ....."],
          "context_set": ""
