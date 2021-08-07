@@ -8,6 +8,8 @@ from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk.stem.lancaster import LancasterStemmer
 
+import spacy
+
 from typing import List
 
 # Necessary downloads
@@ -21,11 +23,13 @@ def nltk_stemmer(sentence: str) -> List[str]:
 
     return [stemmer.stem(w) for w in tokens if w not in "?!,."]
 
+
 def nltk_no_POS_lemmatizer(sentence: str) -> List[str]:
     lemmatizer = WordNetLemmatizer()
     tokens = nltk.word_tokenize(sentence)
 
     return [lemmatizer.lemmatize(w.lower()) for w in tokens if w not in "?!,."]
+
 
 def nltk_POS_lemmatizer(sentence: str) -> List[str]:
     tag_dict = {
@@ -40,3 +44,11 @@ def nltk_POS_lemmatizer(sentence: str) -> List[str]:
 
     return [lemmatizer.lemmatize(token[0], tag_dict.get(token[1][0], wordnet.NOUN)).lower() 
             for token in token_tag_pairs if token[0] not in "?!,."]
+
+
+def spacy_nlp(sentence: str) -> List[str]:
+    # Initialize 'en_core_web_sm' model, keeping only tagger component needed for lemmatization
+    nlp = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
+    doc = [token for token in nlp(sentence) if str(token) not in "?!,."]
+
+    return [str(token.lemma_) for token in doc]
