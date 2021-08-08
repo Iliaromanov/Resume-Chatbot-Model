@@ -11,10 +11,9 @@
                       "What is Resume Chat-bot?",
                       "Talk about this project",
                       "How was this made",
-                      "What can you tell me",
                       "How does this work?"
                      ],
-         "responses": ["*Explains project*"],
+         "responses": ["I'm here to help you find out more about Ilia and his resume! Feel free to ask me any questions reslated to Ilia's resume and experiences such as his software skillset, past work experiences, projects, and contact information. I will do my best to try and answer all your questions!"],
          "context_set": ""
         },
         {"tag": "about yourself", 
@@ -47,12 +46,16 @@
                       "What is Ilia's programming language",
                       "What are Ilia's skills",
                       "What skills does Ilia have",
-                      "Ilia's tech skills"
+                      "Ilia's tech skills",
+                      "Talk about Ilia's skillset",
+                      "What skillset does Ilia have",
+                      "What tech does Ilia have in his toolbelt",
+                      "Describe Ilia's software technologies arsenal "
                      ],
          "responses": ["Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python, including knowledge of a vast array of supported libraries such as OpenCV and Mediapipe for Computer vision, Tensorflow, Keras, Pandas, and Numpy for ML/Data Science, Django and Flask for web development. Ilia is also proficient in C programming and has experience using SQL for working with relational databases such as PostgreSQL, MS SQL Server, Oracle, and Apache HIVE, and using JavaScript, HTML and CSS for web development. Ilia has also been learining Golang and C++ to further expand his skillset."],
          "context_set": ""
         },
-        {"tag": "projects",
+        {"tag": "projects overview",
             "patterns": ["Projects Ilia has worked on?",
                          "Talk about your past project experience",
                          "What side projects have you done?",
@@ -64,6 +67,55 @@
                          "tell us about what Ilia is working on"
                         ],
             "responses": ["Ilia loves to pick up new skills and challege himself by taking on new projects. Some projects Ilia has worked on include .... {talk abt projects}."],
+            "context_set": ""
+        },
+        {"tag": "AI-Based-Desktop-Controller",
+            "patterns": ["Tell us about Ilia's AI-Based-Desktop-Controller project",
+                         "What is AI-Based-Desktop-Controller?",
+                         "Tell me about AI-Based-Desktop-Controller",
+                         "How does AI-Based-Desktop-Controller work?",
+                         "How was AI-Based-Desktop-Controller built?",
+                         "AI-Based-Desktop-Controller",
+                         "AI Based Desktop Controller"
+                        ],
+            "responses": ["Give resume bullet points about AI-Based-Desktop-Controller. The respository and demo for AI-Based-Desktop-Controller can be found <a src=github link>here<a/>"],
+            "context_set": ""
+        },
+        {"tag": "Stock-Trade",
+            "patterns": ["Tell us about Ilia's Stock-Trade project",
+                         "What is Stock-Trade?",
+                         "Tell me about Stock-Trade",
+                         "How does Stock-Trade work?",
+                         "How was Stock-Trade built?",
+                         "Stock-Trade",
+                         "Stock Trade"
+                        ],
+            "responses": ["Give resume bullet points about Stock-Trade. The respository and demo for Stock-Trade can be found <a src=github link>here<a/>. The website is {link website}"],
+            "context_set": ""
+        },
+        {"tag": "Golang-Blockchain",
+            "patterns": ["Tell us about Ilia's Golang-Blockchain project",
+                         "What is Golang-Blockchain?",
+                         "Tell me about Golang-Blockchain",
+                         "How does Golang-Blockchain work?",
+                         "How was Golang-Blockchain built?",
+                         "Golang-Blockchain",
+                         "Golang Blockchain",
+                         "go blockchain"
+                        ],
+            "responses": ["Give resume bullet points about Golang-Blockchain. The respository and demo for Golang-Blockchain can be found <a src=github link>here<a/>. This project is a work in progress."],
+            "context_set": ""
+        },
+        {"tag": "RNN-Stock-Price-Prediction",
+            "patterns": ["Tell us about Ilia's RNN-Stock-Price-Prediction project",
+                         "What is RNN-Stock-Price-Prediction?",
+                         "Tell me about RNN-Stock-Price-Prediction",
+                         "How does RNN-Stock-Price-Prediction?",
+                         "How was RNN-Stock-Price-Prediction built?",
+                         "RNN-Stock-Price-Prediction",
+                         "RNN Stock Price Prediction"
+                        ],
+            "responses": ["Give resume bullet points about RNN-Stock-Price-Prediction. The respository and demo for RNN-Stock-Price-Prediction can be found <a src=github link>here<a/>"],
             "context_set": ""
         },
         {"tag": "work experience",
