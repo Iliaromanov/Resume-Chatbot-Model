@@ -4,17 +4,32 @@ import numpy as np
 import pickle
 import json
 
-from tensorflow.python.ops.gen_array_ops import reverse
-
 from nlp_pipelines import nltk_POS_lemmatizer
 
-model_path = 'adam_model'
+version = "0.0.1"
+
+model_path = 'adam_model_2'
 model = tf.keras.models.load_model(model_path)
 
 words = pickle.load(open(f'{model_path}/words.pkl', 'rb'))
 classes = pickle.load(open(f'{model_path}/classes.pkl', 'rb'))
 
+
+model_2 = pickle.load(open('svm_model.pkl', 'rb'))
+words = pickle.load(open('svm_words.pkl', 'rb'))
+classes = pickle.load(open('svm_classes.pkl', 'rb'))
+
+
+
+header = f"""
+#################################################
+#      Ilia's Resume Chat-bot; v {version}          #
+#################################################
+"""
+
 def main():
+    print(header)
+
     done = False
     while not done:
         sentence = input("Talk: ")
@@ -22,11 +37,12 @@ def main():
             done = True
         else:
             bag = bag_words(sentence, words)
-            result = model.predict(np.array([bag]))[0]
-            probs = {classes[i]: prob for i, prob in enumerate(result)}
-            probs_top_three = {k: f"{v*100:,.2f}%" for k, v in sorted(probs.items(), key=lambda x: x[1], reverse=True)[:3]}
-            print(probs_top_three)
-            print(classes[np.argmax(result)])
+            result = model.predict(np.array([bag]))
+            print(result)
+            # probs = {classes[i]: prob for i, prob in enumerate(result)}
+            # probs_top_three = {k: f"{v*100:,.2f}%" for k, v in sorted(probs.items(), key=lambda x: x[1], reverse=True)[:3]}
+            # print(probs_top_three)
+            # print(classes[np.argmax(result)])
 
 
 def bag_words(sentence, known_words):
