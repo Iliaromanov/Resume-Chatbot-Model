@@ -53,3 +53,15 @@ def spacy_nlp(sentence: str) -> List[str]:
            if str(token) not in "?!,." and not (len(str(token)) == 1 and str(token).lower() not in "ia")]
 
     return [str(token.lemma_) for token in doc]
+
+
+def spacy_word_vectors(sentence: str) -> List[str]:
+    nlp = spacy.load('en_core_web_lg')
+
+    # Disable unneeded pipes to speed up the process
+    with nlp.disable_pipes():
+        return [token.vector for token in nlp(sentence)]
+
+
+if __name__ == "__main__":
+    pass
