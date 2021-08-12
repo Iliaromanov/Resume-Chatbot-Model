@@ -9,6 +9,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.stem.lancaster import LancasterStemmer
 
 import spacy
+import numpy as np
 
 from typing import List
 
@@ -56,11 +57,11 @@ def spacy_nlp(sentence: str) -> List[str]:
 
 
 def spacy_word_vectors(sentence: str) -> List[str]:
-    nlp = spacy.load('en_core_web_lg')
+    nlp = spacy.load('en_core_web_md', disable=["'parser', 'ner', 'lemmatizer', 'textcat'"])
 
     # Disable unneeded pipes to speed up the process
     with nlp.disable_pipes():
-        return [token.vector for token in nlp(sentence)]
+        return np.array([token.vector for token in nlp(sentence)])
 
 
 if __name__ == "__main__":

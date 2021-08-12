@@ -37,12 +37,13 @@ def main():
             done = True
         else:
             bag = bag_words(sentence, words)
-            result = model.predict(np.array([bag]))
-            print(result)
-            # probs = {classes[i]: prob for i, prob in enumerate(result)}
-            # probs_top_three = {k: f"{v*100:,.2f}%" for k, v in sorted(probs.items(), key=lambda x: x[1], reverse=True)[:3]}
-            # print(probs_top_three)
-            # print(classes[np.argmax(result)])
+            result = model_2.predict(np.array([bag]))
+            print(f"SVM Prediction: {result}")
+
+            result = model.predict(np.array([bag]))[0]
+            probs = {classes[i]: prob for i, prob in enumerate(result)}
+            probs_top_three = {k: f"{v*100:,.2f}%" for k, v in sorted(probs.items(), key=lambda x: x[1], reverse=True)[:3]}
+            print(f"DNN Prediction: {probs_top_three} => {classes[np.argmax(result)]}")
 
 
 def bag_words(sentence, known_words):
@@ -60,3 +61,8 @@ def bag_words(sentence, known_words):
 
 if __name__ == "__main__":
     main()
+
+
+
+# "Whats that AI project you did" classifies as AI-Based-Desktop-Controller by DNN and greeting by SVM
+# "How can you help me" classifies as Goodbye 73%, about chat-bot 10% by DNN and about chat-bot by SVM

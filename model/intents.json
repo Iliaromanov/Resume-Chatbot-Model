@@ -131,7 +131,8 @@
                       "Who is Ilia's current employer?",
                       "Is Ilia employed?",
                       "Employment status",
-                      "Does Ilia have a job?"
+                      "Does Ilia have a job?",
+                      "Talk about Ilia's past employement"
                      ],
          "responses": ["Ilia has had an amazing experience working as a Software Development Co-op at the fintech company Opta Information Intelligence. There he had the ability to learn a multitude of new skills and use many new technologies as well as demonstrate and sharpen his existing capabilities. Some projects Ilia has worked on at Opta include: ....."],
          "context_set": ""
