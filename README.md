@@ -4,3 +4,16 @@ Python AI Chat Bot for answering questions related to my resume utilizing tensor
 To see the model creation process go to `./model`.
 
 <!--idea: Make this into an API and host it on heroku or aws or smthn. Then with your personal website make calls to this.-->
+
+## Manual Install for CLI Usage
+
+> `pip install -r requirements.txt`
+
+> `git clone https://github.com/Iliaromanov/Resume-Chat-Bot.git`
+
+> `cd Resume-Chat-Bot/model`
+
+> `python main.py`
+
+
+**This project is a work in progerss, but the CLI based Chatbot is ready for use**
