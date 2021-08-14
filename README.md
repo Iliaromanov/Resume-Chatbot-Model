@@ -14,3 +14,6 @@ To see the model creation process go to `./model`.
 > `cd Resume-Chat-Bot/model`
 
 > `python main.py`
+
+
+**This project is a work in progerss, but the CLI based Chatbot is ready for use**
