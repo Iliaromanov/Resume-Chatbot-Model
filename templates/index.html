@@ -13,29 +13,38 @@
             padding: 5px;
             height: 80%;
             width: 40%;
-            top: 10%;
+            top: 7%;
             left: 30%;
             border: 2px solid black;
         }
         #chat_history {
+            position: relative;
             overflow-y: auto;
             border: 2px solid black;
-            padding: 3px;
         }
         #message {
-
+            width: 80%;
+        }
+        .user_sent_msg {
+            word-break: break-word;
+            right: 5%;
+            background-color: #f1eded;
+            font-family: Arial;
+        }
+        .chatbot_response {
+            word-break: break-word;
+            background-color: #ec8a65;
+            font-family: Arial;
         }
     </style>
 </head>
 <body>
     <div id="chatbot_window">
-        <div id="chat_history">
-
-        </div>
+        <div id="chat_history"></div>
         <div id="input_window">
-            <form id="message_form" onsubmit="getChatbotResponse(); this.value=''" autocomplete="off">
+            <form id="message_form" onsubmit="getChatbotResponse();" autocomplete="off">
                 <input id="message" type="text" placeholder="Type your message here">
-                <input type="button" value="Send" onclick="getChatbotResponse();">
+                <input type="button" value="Send" onclick="getChatbotResponse()">
             </form>
 
         </div>
@@ -47,9 +56,8 @@
         function stopRefresh(event) {event.preventDefault();}
         msgForm.addEventListener('submit', stopRefresh)
 
-        // Scroll to bottom of chat history div
-        let chatHistory = document.getElementById("chat_history");
-        chatHistory.scrollTop = chatHistory.scrollHeight;
+        let chatHistoryDiv = document.getElementById("chat_history")
+        chatHistoryDiv.scrollTop = chatHistoryDiv.scrollHeight
 
         function getChatbotResponse() {
             /* Sends POST request to Flask route that passes msg to the DNN model and returns prediction results
@@ -64,12 +72,14 @@
             }
 
             let sentMsgDiv = document.createElement("div")
+            let innerTag = document.createElement("p")
             let innerTag1 = document.createElement("p")
             innerTag1.innerHTML = "You"
             let innerTag2 = document.createElement("p")
             innerTag2.innerHTML = msg
             sentMsgDiv.appendChild(innerTag1)
             sentMsgDiv.appendChild(innerTag2)
+            sentMsgDiv.className = "user_sent_msg"
 
             chatHistoryDiv.appendChild(sentMsgDiv)
 
@@ -79,11 +89,22 @@
             }).then((response) => {
                 return response.json()
             }).then((data) => {
-                console.log(data)
-
                 let probs = data.top_three_predictions
                 console.log(probs)
+
+                let responseMsgDiv = document.createElement("div")
+                let innerTag1 = document.createElement("p")
+                innerTag1.innerHTML = "Chatbot"
+                let innerTag2 = document.createElement("p")
+                innerTag2.innerHTML = JSON.stringify(probs)
+                responseMsgDiv.appendChild(innerTag1)
+                responseMsgDiv.appendChild(innerTag2)
+                responseMsgDiv.className = "chatbot_response"
+
+                chatHistoryDiv.appendChild(responseMsgDiv)
             })
+
+            document.getElementById("message").value = ''; // empty the input box
         }
     </script>
 </body>
