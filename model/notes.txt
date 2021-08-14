@@ -1,0 +1,8 @@
+Stemming: Takes word and converts it down to its root word. 
+          Ignoring unnecessary parts of strings to improve accuracy of predicitons
+          eg. Whats => what, there!?!?? => there
+
+          This just cuts down end of string 
+
+Lemmatization: converts word to root word properly by considering the context.
+               eg. is the word an adjective, verb, noun, ... 

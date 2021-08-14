@@ -4,20 +4,9 @@ import numpy as np
 import pickle
 import json
 
-from nlp_pipelines import nltk_POS_lemmatizer
+from .nlp_pipelines import nltk_POS_lemmatizer
 
 version = "0.0.1"
-
-model_path = 'adam_model_2'
-model = tf.keras.models.load_model(model_path)
-
-words = pickle.load(open(f'{model_path}/words.pkl', 'rb'))
-classes = pickle.load(open(f'{model_path}/classes.pkl', 'rb'))
-
-
-model_2 = pickle.load(open('svm_model.pkl', 'rb'))
-words = pickle.load(open('svm_words.pkl', 'rb'))
-classes = pickle.load(open('svm_classes.pkl', 'rb'))
 
 
 
@@ -29,6 +18,16 @@ header = f"""
 
 def main():
     print(header)
+
+    model_path = 'adam_model_2'
+    model = tf.keras.models.load_model(model_path)
+
+    words = pickle.load(open(f'{model_path}/words.pkl', 'rb'))
+    classes = pickle.load(open(f'{model_path}/classes.pkl', 'rb'))
+
+    model_2 = pickle.load(open('svm_model.pkl', 'rb'))
+    words = pickle.load(open('svm_words.pkl', 'rb'))
+    classes = pickle.load(open('svm_classes.pkl', 'rb'))
 
     done = False
     while not done:
