@@ -25,9 +25,10 @@ def main():
     words = pickle.load(open(f'{model_path}/words.pkl', 'rb'))
     classes = pickle.load(open(f'{model_path}/classes.pkl', 'rb'))
 
-    model_2 = pickle.load(open('svm_model.pkl', 'rb'))
-    words = pickle.load(open('svm_words.pkl', 'rb'))
-    classes = pickle.load(open('svm_classes.pkl', 'rb'))
+    model_path_2 = "svm_model"
+    model_2 = pickle.load(open(rf'{model_path_2}\svm_model.pkl', 'rb'))
+    words_2 = pickle.load(open(rf'{model_path_2}\svm_words.pkl', 'rb'))
+    classes_2 = pickle.load(open(rf'{model_path_2}\svm_classes.pkl', 'rb'))
 
     done = False
     while not done:
