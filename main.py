@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 import json
 
-from .nlp_pipelines import nltk_POS_lemmatizer
+from nlp_pipelines import nltk_POS_lemmatizer
 
 version = "0.0.1"
 

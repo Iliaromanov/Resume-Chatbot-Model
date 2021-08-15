@@ -1,4 +1,0 @@
-Flask==1.1.2
-nltk==3.5
-pandas==1.1.5
-tensorflow==2.4.1
