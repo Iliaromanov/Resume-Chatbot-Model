@@ -1,14 +1,14 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day", "hello resume chatbot"],
+         "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day", "hello resume chatbot", "good morning", "morning"],
          "responses": ["Hello!", "Hi there, how can I help?"],
          "context_set": ""
         },
-        {"tag": "about_chat-bot",
+        {"tag": "about_chatbot",
          "patterns": ["What is this?",
                       "What do I do?",
                       "What can you do?",
-                      "What is Resume Chat-bot?",
+                      "What is Resume Chat bot?",
                       "Talk about this project",
                       "How was this made",
                       "How does this work?"
@@ -171,7 +171,11 @@
                       "That'll be all for us, thank you for your help",
                       "Goodbye",
                       "Amazing project, very helpful and useful",
-                      "Great work Ilia, we'll talk to you later"
+                      "Great work Ilia, we'll talk to you later",
+                      "goodnight",
+                      "Good night",
+                      "have a nice day",
+                      "good talking to you"
                      ],
          "responses": ["Glad I could help! Feel free to reach out to Ilia to tell him how great this project is :)",
                        "Bye! You can always send me a chat or reach out to Ilia directly if you have any further questions.",
