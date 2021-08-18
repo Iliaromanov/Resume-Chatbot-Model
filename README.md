@@ -11,7 +11,7 @@ Python AI Chat Bot for answering questions related to my resume utilizing tensor
 
 > `git clone https://github.com/Iliaromanov/Resume-Chat-Bot.git`
 
-> `cd Resume-Chat-Bot/model`
+> `cd Resume-Chatbot-Model`
 
 > `python main.py`
 
