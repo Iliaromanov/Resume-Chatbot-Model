@@ -9,7 +9,6 @@ from nlp_pipelines import nltk_POS_lemmatizer
 version = "0.0.1"
 
 
-
 header = f"""
 #################################################
 #      Ilia's Resume Chat-bot; v {version}          #
@@ -79,3 +78,20 @@ if __name__ == "__main__":
 # "Whats that AI project you did" classifies as AI-Based-Desktop-Controller by DNN and greeting by SVM
 # "How can you help me" classifies as Goodbye 73%, about chat-bot 10% by DNN and about chat-bot by SVM, newest DNN gets it right
 # "I have to get going" only classfies as goodbye in newest DNN, svm and adam classify it as Golang-Blockchain project
+
+'''Aug 29, 2021'''
+# What has Ilia done as a software dev: SVM-work experience, adam_model_2-work=61%, general about=18%, latest DNN-general about 42.84%, work=27.48%
+'''VVV massive mistake VVV'''
+# Give me a breakdown of some of Ilia's notable projects
+# SVM Prediction: ['projects overview']
+# DNN Prediction: {'about yourself': '92.34%', 'projects overview': '6.99%', 'tech skills': '0.32%'} => about yourself
+# Newest DNN Prediction (this one is used in the web app): {'general_about': '66.17%', 'projects_overview': '16.10%', 'give_resume': '10.99%'} => general_about
+
+
+
+
+
+
+
+
+

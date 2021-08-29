@@ -16,7 +16,7 @@
          "responses": ["I'm here to help you find out more about Ilia and his resume! Feel free to ask me any questions reslated to Ilia's resume and experiences such as his software skillset, past work experiences, projects, and contact information. I will do my best to try and answer all your questions!"],
          "context_set": ""
         },
-        {"tag": "about_yourself", 
+        {"tag": "bio", 
          "patterns": ["Give a quick summary about Ilia",
                       "Briefly tell me a little bit about yourself",
                       "Give a short overview of Ilia's experiences and qualifications",
@@ -34,7 +34,7 @@
          "responses": ["Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly learning and adding new skills to his arsenal. Here are some things about Ilia you may find interesting: {button/links to: work exprience, projects, hobbies/interests/extrcurriculars} ..."],
          "context_set": ""
         },
-        {"tag": "tech_skills",
+        {"tag": "skills",
          "patterns": ["What skills does Ilia have?",
                       "What does your tech stack look like?",
                       "Ilia's tech stack and programming skills",
@@ -50,12 +50,13 @@
                       "Talk about Ilia's skillset",
                       "What skillset does Ilia have",
                       "What tech does Ilia have in his toolbelt",
-                      "Describe Ilia's software technologies arsenal "
+                      "Describe Ilia's software technologies arsenal",
+                      "Python python JavaScript javascript C C++ Go Golang"
                      ],
          "responses": ["Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python, including knowledge of a vast array of supported libraries such as OpenCV and Mediapipe for Computer vision, Tensorflow, Keras, Pandas, and Numpy for ML/Data Science, Django and Flask for web development. Ilia is also proficient in C programming and has experience using SQL for working with relational databases such as PostgreSQL, MS SQL Server, Oracle, and Apache HIVE, and using JavaScript, HTML and CSS for web development. Ilia has also been learining Golang and C++ to further expand his skillset."],
          "context_set": ""
         },
-        {"tag": "projects_overview",
+        {"tag": "projects",
             "patterns": ["Projects Ilia has worked on?",
                          "Talk about your past project experience",
                          "What side projects have you done?",
@@ -64,19 +65,22 @@
                          "What are some side things Ilia has done?",
                          "Ilia's side projects",
                          "please tell us about Ilia's projects",
-                         "tell us about what Ilia is working on"
+                         "tell us about what Ilia is working on",
+                         "Give me a breakdown of some of Ilia's notable projects",
+                         "personal project overview"
                         ],
             "responses": ["Ilia loves to pick up new skills and challege himself by taking on new projects. Some projects Ilia has worked on include .... {talk abt projects}."],
             "context_set": ""
         },
-        {"tag": "AI-Based-Desktop-Controller",
+        {"tag": "Desktop-Controller",
             "patterns": ["Tell us about Ilia's AI-Based-Desktop-Controller project",
                          "What is AI-Based-Desktop-Controller?",
                          "Tell me about AI-Based-Desktop-Controller",
                          "How does AI-Based-Desktop-Controller work?",
                          "How was AI-Based-Desktop-Controller built?",
                          "AI-Based-Desktop-Controller",
-                         "AI Based Desktop Controller"
+                         "AI Based Desktop Controller",
+                         "OpenCV Mediapipe Python"
                         ],
             "responses": ["Give resume bullet points about AI-Based-Desktop-Controller. The respository and demo for AI-Based-Desktop-Controller can be found <a src=github link>here<a/>"],
             "context_set": ""
@@ -88,12 +92,13 @@
                          "How does Stock-Trade work?",
                          "How was Stock-Trade built?",
                          "Stock-Trade",
-                         "Stock Trade"
+                         "Stock Trade",
+                         "Flask Python Web"
                         ],
             "responses": ["Give resume bullet points about Stock-Trade. The respository and demo for Stock-Trade can be found <a src=github link>here<a/>. The website is {link website}"],
             "context_set": ""
         },
-        {"tag": "Golang-Blockchain",
+        {"tag": "Go-Blockchain",
             "patterns": ["Tell us about Ilia's Golang-Blockchain project",
                          "What is Golang-Blockchain?",
                          "Tell me about Golang-Blockchain",
@@ -106,19 +111,20 @@
             "responses": ["Give resume bullet points about Golang-Blockchain. The respository and demo for Golang-Blockchain can be found <a src=github link>here<a/>. This project is a work in progress."],
             "context_set": ""
         },
-        {"tag": "RNN-Stock-Price-Prediction",
+        {"tag": "RNN-Stock-Price",
             "patterns": ["Tell us about Ilia's RNN-Stock-Price-Prediction project",
                          "What is RNN-Stock-Price-Prediction?",
                          "Tell me about RNN-Stock-Price-Prediction",
                          "How does RNN-Stock-Price-Prediction?",
                          "How was RNN-Stock-Price-Prediction built?",
                          "RNN-Stock-Price-Prediction",
-                         "RNN Stock Price Prediction"
+                         "RNN Stock Price Prediction",
+                         "Tensorflow Keras neural network machine learning"
                         ],
             "responses": ["Give resume bullet points about RNN-Stock-Price-Prediction. The respository and demo for RNN-Stock-Price-Prediction can be found <a src=github link>here<a/>"],
             "context_set": ""
         },
-        {"tag": "work_experience",
+        {"tag": "experience",
          "patterns": ["What work experience does Ilia have?",
                       "What is Ilia's experience level",
                       "Has Ilia had any jobs in the tech industry",
@@ -137,7 +143,9 @@
                       "Tell us about Ilia's time at Opta",
                       "What did Ilia do at Opta",
                       "Opta",
-                      "What did Ilia do for his software developer co-op"
+                      "What did Ilia do for his software developer co-op",
+                      "How was Ilia's four month computer science job",
+                      "Talk about Ilia's co-op work experience"
                      ],
          "responses": ["Ilia has had an amazing experience working as a Software Development Co-op at the fintech company Opta Information Intelligence. There he had the ability to learn a multitude of new skills and use many new technologies as well as demonstrate and sharpen his existing capabilities. Some projects Ilia has worked on at Opta include: ....."],
          "context_set": ""
@@ -184,6 +192,12 @@
                        "Very nice to meet you! We've got a great thing going here, lets keep in touch :)"
                       ],
          "context_set": ""
-        }
+        },
+        {"tag": "python",
+            "patterns": ["Python"
+                        ],
+            "responses": ["Show widget with python projects and maybe Opta work"],
+            "context_set": ""
+           }
     ]
 }
