@@ -1,7 +1,7 @@
 {"intents": [
         {"tag": "greeting",
          "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day", "hello resume chatbot", "good morning", "morning"],
-         "responses": ["hello hello!", "Hi, how can I help?", "Howdy!", "Hi there, how may I be of service?", "Hello hello! What can I do for you?"],
+         "responses": ["hello hello 👋!", "Hi 👋, how can I help?", "Howdy 🤠!", "Hi there, how may I be of service?", "Hello hello! What can I do for you?"],
          "context_set": ""
         },
         {"tag": "iliaBOT_options",
@@ -41,7 +41,7 @@
                       "About yourself",
                       "what does Ilia do?"
                      ],
-         "responses": ["Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly learning and adding new skills to his arsenal. Here are some things about Ilia you may find interesting: "],
+         "responses": ["Ilia is a Computer Science major in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly learning and adding new skills to his arsenal. Here are some things about Ilia you may find interesting: "],
          "context_set": ""
         },
         {"tag": "skills",
@@ -63,8 +63,8 @@
                       "Describe Ilia's software technologies arsenal",
                       "Python python JavaScript javascript C C++ Go Golang"
                      ],
-         "responses": ["Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python, including knowledge of a vast array of supported libraries such as OpenCV and Mediapipe for Computer vision, Tensorflow, Keras, Pandas, and Numpy for ML/Data Science, Django and Flask for web development. Ilia is also proficient in C programming and has experience using SQL for working with relational databases such as PostgreSQL, MS SQL Server, Oracle, and Apache HIVE, and using JavaScript, HTML and CSS for web development. Ilia has also been learining Golang and C++ to further expand his skillset."],
-         "context_set": ""
+         "responses": ["Ilia strives for life long learning and is constantly adding to his skillset. Here are some of his current techincal skills 👨‍💻:"],
+         "context_set": "Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python, including knowledge of a vast array of supported libraries such as OpenCV and Mediapipe for Computer vision, Tensorflow, Keras, Pandas, and Numpy for ML/Data Science, Django and Flask for web development. Ilia is also proficient in C programming and has experience using SQL for working with relational databases such as PostgreSQL, MS SQL Server, Oracle, and Apache HIVE, and using JavaScript, HTML and CSS for web development. Ilia has also been learining Golang and C++ to further expand his skillset."
         },
         {"tag": "projects",
             "patterns": ["Projects Ilia has worked on?",
@@ -79,7 +79,7 @@
                          "Give me a breakdown of some of Ilia's notable projects",
                          "personal project overview"
                         ],
-            "responses": ["Ilia loves to pick up new skills and challege himself by taking on new projects. Some projects Ilia has worked on include .... {talk abt projects}."],
+            "responses": ["Ilia loves to challege himself by taking on new projects. Here are some of his notable projects 💡:"],
             "context_set": ""
         },
         {"tag": "Desktop-Controller",
@@ -165,7 +165,7 @@
                       "How was Ilia's four month computer science job",
                       "Talk about Ilia's co-op work experience"
                      ],
-         "responses": ["Some info about Ilia's work experience:"],
+         "responses": ["Some info about Ilia's work experience 💼:"],
          "context_set": ""
         },
         {"tag": "education",
@@ -179,7 +179,7 @@
                          "Where does Ilia go for university",
                          "Education"
                         ],
-            "responses": ["Here's some info on Ilia's education: "],
+            "responses": ["Here's some info on Ilia's education 🎓: "],
             "context_set": ""
         },
         {"tag": "contact",
@@ -202,7 +202,7 @@
                          "give me Ilia's resume PDF",
                          "give Ilia resume"
                         ],
-            "responses": ["Here's a downloadable PDF of my resume:"],
+            "responses": ["Here's a downloadable PDF of Ilia's resume 📝:"],
             "context_set": ""
         },
         {"tag": "goodbye",
@@ -218,9 +218,9 @@
                       "good talking to you"
                      ],
          "responses": ["Glad I could help! Feel free to reach out to Ilia to tell him how great this project is :)",
-                       "Bye! You can always send me a chat or reach out to Ilia directly if you have any further questions.",
+                       "Bye 👋! You can always send me a chat or reach out to Ilia directly if you have any further questions.",
                        "Thank you for your time!",
-                       "I hope I've been of use. Have a great rest of your day!",
+                       "Have a great rest of your day 👋! Hope I've helped 😁",
                        "Very nice to meet you! We've got a great thing going here, lets keep in touch :)"
                       ],
          "context_set": ""
