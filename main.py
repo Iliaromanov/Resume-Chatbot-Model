@@ -33,6 +33,7 @@ def main():
     keras_model = tf.keras.models.load_model(keras_model_path)
     keras_words = pickle.load(open(rf'{keras_model_path}\words.pkl', 'rb'))
     keras_classes = pickle.load(open(rf'{keras_model_path}\classes.pkl', 'rb'))
+    responses = pickle.load(open(rf'{keras_model_path}\responses.pkl', 'rb'))
 
     done = False
     while not done:
@@ -55,6 +56,11 @@ def main():
             probs = {keras_classes[i]: prob for i, prob in enumerate(result)}
             probs_top_three = {k: f"{v*100:,.2f}%" for k, v in sorted(probs.items(), key=lambda x: x[1], reverse=True)[:3]}
             print(f"Newest DNN Prediction (this one is used in the web app): {probs_top_three} => {keras_classes[np.argmax(result)]}")
+            top_responses = responses[list(probs_top_three.keys())[0]]
+            np.random.shuffle(top_responses)
+
+            print(f"\n{top_responses[0]}")
+
 
 
 def bag_words(sentence, known_words):

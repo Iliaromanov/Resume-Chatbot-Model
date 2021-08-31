@@ -1,19 +1,29 @@
 {"intents": [
         {"tag": "greeting",
          "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day", "hello resume chatbot", "good morning", "morning"],
-         "responses": ["Hello!", "Hi there, how can I help?"],
+         "responses": ["hello hello!", "Hi, how can I help?", "Howdy!", "Hi there, how may I be of service?", "Hello hello! What can I do for you?"],
          "context_set": ""
         },
+        {"tag": "iliaBOT_options",
+            "patterns": ["What is this?",
+                         "What can you help me with?",
+                         "What do I do?",
+                         "What can you do?",
+                         "What can you tell me",
+                         "How can you help me"
+                        ],
+            "responses": ["I'm here to help you find out more about Ilia and his resume! Choose one of the options below, or ask me something specific and I will do my best to try and answer all your questions :)"],
+            "context_set": ""
+        },
         {"tag": "about_chatbot",
-         "patterns": ["What is this?",
-                      "What do I do?",
-                      "What can you do?",
-                      "What is Resume Chat bot?",
+         "patterns": ["What is Resume Chat bot?",
+                      "What is IliaBOT",
+                      "How where you built",
                       "Talk about this project",
                       "How was this made",
                       "How does this work?"
                      ],
-         "responses": ["I'm here to help you find out more about Ilia and his resume! Feel free to ask me any questions reslated to Ilia's resume and experiences such as his software skillset, past work experiences, projects, and contact information. I will do my best to try and answer all your questions!"],
+         "responses": ["Here us a little bit about this project: "],
          "context_set": ""
         },
         {"tag": "bio", 
@@ -31,7 +41,7 @@
                       "About yourself",
                       "what does Ilia do?"
                      ],
-         "responses": ["Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly learning and adding new skills to his arsenal. Here are some things about Ilia you may find interesting: {button/links to: work exprience, projects, hobbies/interests/extrcurriculars} ..."],
+         "responses": ["Ilia is a Computer Science major, currently in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly learning and adding new skills to his arsenal. Here are some things about Ilia you may find interesting: "],
          "context_set": ""
         },
         {"tag": "skills",
@@ -80,6 +90,9 @@
                          "How was AI-Based-Desktop-Controller built?",
                          "AI-Based-Desktop-Controller",
                          "AI Based Desktop Controller",
+                         "Whats that desktop controller project Ilia worked on",
+                         "Tell me about the desktop controller project Ilia built",
+                         "Can you give some info on the AI desktop controller project please",
                          "OpenCV Mediapipe Python"
                         ],
             "responses": ["Give resume bullet points about AI-Based-Desktop-Controller. The respository and demo for AI-Based-Desktop-Controller can be found <a src=github link>here<a/>"],
@@ -92,7 +105,9 @@
                          "How does Stock-Trade work?",
                          "How was Stock-Trade built?",
                          "Stock-Trade",
-                         "Stock Trade",
+                         "Stock Trade project",
+                         "Talk about Ilia's stock tracking web app",
+                         "Give some info on the Stock Trade application Ilia made",
                          "Flask Python Web"
                         ],
             "responses": ["Give resume bullet points about Stock-Trade. The respository and demo for Stock-Trade can be found <a src=github link>here<a/>. The website is {link website}"],
@@ -106,6 +121,7 @@
                          "How was Golang-Blockchain built?",
                          "Golang-Blockchain",
                          "Golang Blockchain",
+                         "Tell us about Ilia's Golang blockchain project",
                          "go blockchain"
                         ],
             "responses": ["Give resume bullet points about Golang-Blockchain. The respository and demo for Golang-Blockchain can be found <a src=github link>here<a/>. This project is a work in progress."],
@@ -119,6 +135,8 @@
                          "How was RNN-Stock-Price-Prediction built?",
                          "RNN-Stock-Price-Prediction",
                          "RNN Stock Price Prediction",
+                         "Talk about Ilia's stock price prediction project",
+                         "Talk about Ilia's recurrent neural network project",
                          "Tensorflow Keras neural network machine learning"
                         ],
             "responses": ["Give resume bullet points about RNN-Stock-Price-Prediction. The respository and demo for RNN-Stock-Price-Prediction can be found <a src=github link>here<a/>"],
@@ -147,8 +165,22 @@
                       "How was Ilia's four month computer science job",
                       "Talk about Ilia's co-op work experience"
                      ],
-         "responses": ["Ilia has had an amazing experience working as a Software Development Co-op at the fintech company Opta Information Intelligence. There he had the ability to learn a multitude of new skills and use many new technologies as well as demonstrate and sharpen his existing capabilities. Some projects Ilia has worked on at Opta include: ....."],
+         "responses": ["Some info about Ilia's work experience:"],
          "context_set": ""
+        },
+        {"tag": "education",
+            "patterns": ["Where does Ilia go to school?",
+                         "What academic program is Ilia in",
+                         "Give a brief breakdown of Ilia's education please",
+                         "Talk about Ilia's education",
+                         "What university does Ilia go to",
+                         "What does Ilia study",
+                         "What degree is Ilia pursuing",
+                         "Where does Ilia go for university",
+                         "Education"
+                        ],
+            "responses": ["Here's some info on Ilia's education: "],
+            "context_set": ""
         },
         {"tag": "contact",
             "patterns": ["How can we contact Ilia?",
@@ -158,7 +190,7 @@
                          "Ilia contact information",
                          "Give us Ilia's preferred contact info"
                         ],
-            "responses": ["Glad I could help!", "Bye! You can always send me a chat if you have any further questions."],
+            "responses": ["You can reach Ilia through email at iliaromanov033@gmail.com, or give him a call/text at 647-787-3870"],
             "context_set": ""
         },
         {"tag": "give_resume",
@@ -170,7 +202,7 @@
                          "give me Ilia's resume PDF",
                          "give Ilia resume"
                         ],
-            "responses": ["this will send the user a pdf of my resume"],
+            "responses": ["Here's a downloadable PDF of my resume:"],
             "context_set": ""
         },
         {"tag": "goodbye",
@@ -192,12 +224,6 @@
                        "Very nice to meet you! We've got a great thing going here, lets keep in touch :)"
                       ],
          "context_set": ""
-        },
-        {"tag": "python",
-            "patterns": ["Python"
-                        ],
-            "responses": ["Show widget with python projects and maybe Opta work"],
-            "context_set": ""
-           }
+        }
     ]
 }
