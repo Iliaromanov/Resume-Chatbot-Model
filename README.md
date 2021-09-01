@@ -3,9 +3,9 @@ Python AI Chatbot for answering questions related to my resume. <!-- utilizing t
 
 This repo is for the CLI based version of the Chatbot. It shows the development, training, and selection process of the models and NLP pipelines. The CLI chatbot responses utilize and display the results from each of the existing models as opposed to only using the most accurate model. 
 
-The web app repo for this project that only uses the most accurate model can be found at https://github.com/Iliaromanov/Resume-Chatbot-WebApp
+The web app repo for this project can be found at https://github.com/Iliaromanov/Resume-Chatbot-WebApp
 
-The repo for the NLP pipeline API I built as a microservice for this project's web app can be found at https://github.com/Iliaromanov/nlp-pipeline-API
+The repo for the NLP pipeline API I built as a microservice for this project's web app utilizing the NLP pipelines developed in this repository can be found at https://github.com/Iliaromanov/nlp-pipeline-API
 
 ## Installation and Setup for CLI Usage
 
