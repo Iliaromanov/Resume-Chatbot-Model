@@ -13,9 +13,26 @@
                          "How can you help me",
                          "Show me my options again please",
                          "can you show me the clickable options again?",
+                         "main options",
                          "options"
                         ],
             "responses": ["I'm here to help you find out more about Ilia and his resume! Choose one of the options below, or ask me something specific and I will do my best to try and answer all your questions :)"],
+            "context_set": ""
+        },
+        {"tag": "iliaBOT_other_options",
+            "patterns": ["What other things can you tell me about?",
+                         "What else can you help me with?",
+                         "What are my other options?",
+                         "Is there anything else you can do, besides what you've shown me?",
+                         "What else can you tell me",
+                         "How else can you help me",
+                         "What are my other options?",
+                         "Can you show me the other options",
+                         "Could you show me anything else, other than what I've seen so far?",
+                         "Extra other options",
+                         "other options"
+                        ],
+            "responses": ["Here are some other things I can help you with"],
             "context_set": ""
         },
         {"tag": "bio", 
@@ -105,9 +122,11 @@
                          "Talk about this project",
                          "How was this made",
                          "How does this work?",
+                         "Tell me about the backend of this web app",
+                         "Tell me about this web app",
                          "iliabot"
                         ],
-            "responses": ["Here us a little bit about this project: "],
+            "responses": ["Here us a little bit about this project "],
             "context_set": ""
         },
         {"tag": "Stock-Trade",
@@ -138,7 +157,7 @@
                          "Tell us about Ilia's Golang blockchain project",
                          "go blockchain"
                         ],
-            "responses": ["Give resume bullet points about Golang-Blockchain. The respository and demo for Golang-Blockchain can be found <a src=github link>here<a/>. This project is a work in progress."],
+            "responses": ["Whoops. Go-Blockchain is still under development, so Ilia hasn't added a widget for it yet. Sorry!"],
             "context_set": ""
         },
         {"tag": "RNN-Stock-Price",
@@ -153,22 +172,22 @@
                          "Talk about Ilia's recurrent neural network project",
                          "Tensorflow Keras neural network machine learning"
                         ],
-            "responses": ["Give resume bullet points about RNN-Stock-Price-Prediction. The respository and demo for RNN-Stock-Price-Prediction can be found <a src=github link>here<a/>"],
+            "responses": ["Whoops. RNN-Stock-Price-Prediction is still under development, so Ilia hasn't added a widget for it yet. Sorry!"],
             "context_set": ""
         },
         {"tag": "Door-Detection",
-            "patterns": ["Tell us about Ilia's RNN-Stock-Price-Prediction project",
-                         "What is RNN-Stock-Price-Prediction?",
-                         "Tell me about RNN-Stock-Price-Prediction",
-                         "How does RNN-Stock-Price-Prediction?",
-                         "How was RNN-Stock-Price-Prediction built?",
-                         "RNN-Stock-Price-Prediction",
-                         "RNN Stock Price Prediction",
-                         "Talk about Ilia's stock price prediction project",
-                         "Talk about Ilia's recurrent neural network project",
-                         "Tensorflow Keras neural network machine learning"
+            "patterns": ["Tell us about Ilia's Door detection project",
+                         "What is door detection?",
+                         "Tell me about Door-Detection",
+                         "How does the door detection project work?",
+                         "How was door-detection built?",
+                         "Door Detection",
+                         "Door-Detection",
+                         "Talk about Ilia's neural network project",
+                         "Tensorflow Keras neural network machine learning",
+                         "show me door detection project details please"
                         ],
-            "responses": ["Give resume bullet points about RNN-Stock-Price-Prediction. The respository and demo for RNN-Stock-Price-Prediction can be found <a src=github link>here<a/>"],
+            "responses": ["Give resume bullet points about Door detection"],
             "context_set": ""
         },
         {"tag": "experience",
@@ -208,7 +227,8 @@
                          "Where does Ilia go for university",
                          "Education",
                          "Can you show me some of Ilia's coursework",
-                         "What courses has Ilia done?"
+                         "What courses has Ilia done?",
+                         "Show me education, I haven't seen that one yet"
                         ],
             "responses": ["Here's some info on Ilia's education 🎓 "],
             "context_set": ""
