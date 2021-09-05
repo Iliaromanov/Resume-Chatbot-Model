@@ -1,7 +1,7 @@
 {"intents": [
         {"tag": "greeting",
          "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day", "hello resume chatbot", "good morning", "morning"],
-         "responses": ["hello hello 👋!", "Hi 👋, how can I help?", "Howdy 🤠!", "Hi there, how may I be of service?", "Hello hello! What can I do for you?"],
+         "responses": ["hello hello👋!", "Hi👋, how can I help?", "Howdy🤠!", "Hi there, how may I be of service?", "Hello hello! What can I do for you?"],
          "context_set": ""
         },
         {"tag": "iliaBOT_options",
@@ -10,38 +10,32 @@
                          "What do I do?",
                          "What can you do?",
                          "What can you tell me",
-                         "How can you help me"
+                         "How can you help me",
+                         "Show me my options again please",
+                         "can you show me the clickable options again?",
+                         "options"
                         ],
             "responses": ["I'm here to help you find out more about Ilia and his resume! Choose one of the options below, or ask me something specific and I will do my best to try and answer all your questions :)"],
             "context_set": ""
         },
-        {"tag": "about_chatbot",
-         "patterns": ["What is Resume Chat bot?",
-                      "What is IliaBOT",
-                      "How where you built",
-                      "Talk about this project",
-                      "How was this made",
-                      "How does this work?"
-                     ],
-         "responses": ["Here us a little bit about this project: "],
-         "context_set": ""
-        },
         {"tag": "bio", 
          "patterns": ["Give a quick summary about Ilia",
-                      "Briefly tell me a little bit about yourself",
-                      "Give a short overview of Ilia's experiences and qualifications",
+                      "Briefly tell me a little bit about ilia",
+                      "Give a short overview of Ilia's qualifications",
                       "Quickly describe Ilia",
                       "In short, who is Ilia?",
                       "Tell us about Ilia",
                       "Who is Ilia?",
-                      "Detailed breakdown of Ilia as a software developer engineer",
                       "In detail tell me about Ilia",
                       "Give a detailed description of Ilia",
                       "Tell us me about yourself",
                       "About yourself",
-                      "what does Ilia do?"
+                      "what does Ilia do?",
+                      "why should we hire Ilia?",
+                      "what does Ilia bring to the table?",
+                      "what does Ilia offer"
                      ],
-         "responses": ["Ilia is a Computer Science major in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly learning and adding new skills to his arsenal. Here are some things about Ilia you may find interesting: "],
+         "responses": ["Ilia is a Software/Machine Learning Developer and a Computer Science major in his second year of studies at the University of Waterloo. He loves to challenge himself with new projects and is constantly learning and adding new skills to his arsenal. Here are some things about Ilia you may find interesting: "],
          "context_set": ""
         },
         {"tag": "skills",
@@ -63,7 +57,7 @@
                       "Describe Ilia's software technologies arsenal",
                       "Python python JavaScript javascript C C++ Go Golang"
                      ],
-         "responses": ["Ilia strives for life long learning and is constantly adding to his skillset. Here are some of his current techincal skills 👨‍💻:"],
+         "responses": ["Ilia is a strong believer in lifelong learning and is constantly looking to expand his skillset. Here are some of his current technical skills 👨‍💻:"],
          "context_set": "Ilia loves exploring new tools and technologies and is constantly expanding his skillset. He is fluent in Python, including knowledge of a vast array of supported libraries such as OpenCV and Mediapipe for Computer vision, Tensorflow, Keras, Pandas, and Numpy for ML/Data Science, Django and Flask for web development. Ilia is also proficient in C programming and has experience using SQL for working with relational databases such as PostgreSQL, MS SQL Server, Oracle, and Apache HIVE, and using JavaScript, HTML and CSS for web development. Ilia has also been learining Golang and C++ to further expand his skillset."
         },
         {"tag": "projects",
@@ -77,9 +71,13 @@
                          "please tell us about Ilia's projects",
                          "tell us about what Ilia is working on",
                          "Give me a breakdown of some of Ilia's notable projects",
-                         "personal project overview"
+                         "personal project overview",
+                         "show me Ilia's projects",
+                         "can I have a look at some of the projects Ilia has wroked on",
+                         "where do I go to see Ilia's projects",
+                         "where do I see Ilia's projects"
                         ],
-            "responses": ["Ilia loves to challege himself by taking on new projects. Here are some of his notable projects 💡:"],
+            "responses": ["Ilia loves to challege himself by taking on new projects. Here are brief descriptions of his notable projects💡. If you would like to get more details on a specific project, send me a quick message asking about it below :)"],
             "context_set": ""
         },
         {"tag": "Desktop-Controller",
@@ -89,6 +87,8 @@
                          "How does AI-Based-Desktop-Controller work?",
                          "How was AI-Based-Desktop-Controller built?",
                          "AI-Based-Desktop-Controller",
+                         "ai-desktop-controller",
+                         "ai-based-desktop-controller",
                          "AI Based Desktop Controller",
                          "Whats that desktop controller project Ilia worked on",
                          "Tell me about the desktop controller project Ilia built",
@@ -98,6 +98,18 @@
             "responses": ["Give resume bullet points about AI-Based-Desktop-Controller. The respository and demo for AI-Based-Desktop-Controller can be found <a src=github link>here<a/>"],
             "context_set": ""
         },
+        {"tag": "about_chatbot",
+            "patterns": ["What is Resume Chat bot?",
+                         "What is IliaBOT",
+                         "How where you built",
+                         "Talk about this project",
+                         "How was this made",
+                         "How does this work?",
+                         "iliabot"
+                        ],
+            "responses": ["Here us a little bit about this project: "],
+            "context_set": ""
+        },
         {"tag": "Stock-Trade",
             "patterns": ["Tell us about Ilia's Stock-Trade project",
                          "What is Stock-Trade?",
@@ -105,6 +117,7 @@
                          "How does Stock-Trade work?",
                          "How was Stock-Trade built?",
                          "Stock-Trade",
+                         "stock-trade",
                          "Stock Trade project",
                          "Talk about Ilia's stock tracking web app",
                          "Give some info on the Stock Trade application Ilia made",
@@ -120,6 +133,7 @@
                          "How does Golang-Blockchain work?",
                          "How was Golang-Blockchain built?",
                          "Golang-Blockchain",
+                         "go-blockchain",
                          "Golang Blockchain",
                          "Tell us about Ilia's Golang blockchain project",
                          "go blockchain"
@@ -128,6 +142,21 @@
             "context_set": ""
         },
         {"tag": "RNN-Stock-Price",
+            "patterns": ["Tell us about Ilia's RNN-Stock-Price-Prediction project",
+                         "What is RNN-Stock-Price-Prediction?",
+                         "Tell me about RNN-Stock-Price-Prediction",
+                         "How does RNN-Stock-Price-Prediction?",
+                         "How was RNN-Stock-Price-Prediction built?",
+                         "RNN-Stock-Price-Prediction",
+                         "RNN Stock Price Prediction",
+                         "Talk about Ilia's stock price prediction project",
+                         "Talk about Ilia's recurrent neural network project",
+                         "Tensorflow Keras neural network machine learning"
+                        ],
+            "responses": ["Give resume bullet points about RNN-Stock-Price-Prediction. The respository and demo for RNN-Stock-Price-Prediction can be found <a src=github link>here<a/>"],
+            "context_set": ""
+        },
+        {"tag": "Door-Detection",
             "patterns": ["Tell us about Ilia's RNN-Stock-Price-Prediction project",
                          "What is RNN-Stock-Price-Prediction?",
                          "Tell me about RNN-Stock-Price-Prediction",
@@ -165,7 +194,7 @@
                       "How was Ilia's four month computer science job",
                       "Talk about Ilia's co-op work experience"
                      ],
-         "responses": ["Some info about Ilia's work experience 💼:"],
+         "responses": ["Some info about Ilia's work experience 💼"],
          "context_set": ""
         },
         {"tag": "education",
@@ -177,9 +206,11 @@
                          "What does Ilia study",
                          "What degree is Ilia pursuing",
                          "Where does Ilia go for university",
-                         "Education"
+                         "Education",
+                         "Can you show me some of Ilia's coursework",
+                         "What courses has Ilia done?"
                         ],
-            "responses": ["Here's some info on Ilia's education 🎓: "],
+            "responses": ["Here's some info on Ilia's education 🎓 "],
             "context_set": ""
         },
         {"tag": "contact",
@@ -193,7 +224,7 @@
             "responses": ["You can reach Ilia through email at iliaromanov033@gmail.com, or give him a call/text at 647-787-3870"],
             "context_set": ""
         },
-        {"tag": "give_resume",
+        {"tag": "show_resume",
             "patterns": ["Please provide us Ilia's resume",
                          "Do you have a copy of Ilia's resume?",
                          "Can I see Ilia's resume please",
@@ -202,7 +233,7 @@
                          "give me Ilia's resume PDF",
                          "give Ilia resume"
                         ],
-            "responses": ["Here's a downloadable PDF of Ilia's resume 📝:"],
+            "responses": ["Here's a downloadable PDF of Ilia's resume📝"],
             "context_set": ""
         },
         {"tag": "goodbye",
@@ -215,12 +246,14 @@
                       "goodnight",
                       "Good night",
                       "have a nice day",
-                      "good talking to you"
+                      "good talking to you",
+                      "I have to get going",
+                      "I've got to go now"
                      ],
          "responses": ["Glad I could help! Feel free to reach out to Ilia to tell him how great this project is :)",
-                       "Bye 👋! You can always send me a chat or reach out to Ilia directly if you have any further questions.",
+                       "Bye👋! You can always send me a chat or reach out to Ilia directly if you have any further questions.",
                        "Thank you for your time!",
-                       "Have a great rest of your day 👋! Hope I've helped 😁",
+                       "Have a great rest of your day👋! Hope I've helped😁",
                        "Very nice to meet you! We've got a great thing going here, lets keep in touch :)"
                       ],
          "context_set": ""
