@@ -17,3 +17,23 @@ The repo for the NLP pipeline API I built as a microservice for this project's w
 
 > `python main.py`
 
+<!--
+Intents I want to use in the future but don't have the frontend for yet:
+
+{"tag": "iliaBOT_other_options",
+    "patterns": ["What other things can you tell me about?",
+                 "What else can you help me with?",
+                 "What are my other options?",
+                 "Is there anything else you can do, besides what you've shown me?",
+                 "What else can you tell me",
+                 "How else can you help me",
+                 "What are my other options?",
+                 "Can you show me the other options",
+                 "Could you show me anything else, other than what I've seen so far?",
+                 "Extra other options",
+                 "other options"
+                ],
+    "responses": ["😳 Looks like you found a feature Ilia hasn't finished building yet. For now lets just move on pretend this never happened ..."],
+    "context_set": "Here are some other things I can help you with"
+},
+-->
