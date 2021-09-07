@@ -14,25 +14,10 @@
                          "Show me my options again please",
                          "can you show me the clickable options again?",
                          "main options",
+                         "what else can you show me?",
                          "options"
                         ],
             "responses": ["I'm here to help you find out more about Ilia and his resume! Choose one of the options below, or ask me something specific and I will do my best to try and answer all your questions :)"],
-            "context_set": ""
-        },
-        {"tag": "iliaBOT_other_options",
-            "patterns": ["What other things can you tell me about?",
-                         "What else can you help me with?",
-                         "What are my other options?",
-                         "Is there anything else you can do, besides what you've shown me?",
-                         "What else can you tell me",
-                         "How else can you help me",
-                         "What are my other options?",
-                         "Can you show me the other options",
-                         "Could you show me anything else, other than what I've seen so far?",
-                         "Extra other options",
-                         "other options"
-                        ],
-            "responses": ["Here are some other things I can help you with"],
             "context_set": ""
         },
         {"tag": "bio", 
@@ -185,7 +170,10 @@
                          "Door-Detection",
                          "Talk about Ilia's neural network project",
                          "Tensorflow Keras neural network machine learning",
-                         "show me door detection project details please"
+                         "show me door detection project details please",
+                         "team project",
+                         "nwHacks",
+                         "nwhacks"
                         ],
             "responses": ["Give resume bullet points about Door detection"],
             "context_set": ""
@@ -256,6 +244,14 @@
             "responses": ["Here's a downloadable PDF of Ilia's resume📝"],
             "context_set": ""
         },
+        {"tag": "no",
+            "patterns": ["no", "nope", "nah", "No, I don't"],
+            "responses": ["Ok, sorry. Carry on then :)",
+                          "Alright, let me know if there is anything else I can help you with then :)",
+                          "Ok, my apologies. You can go ahead and send me a chat of what you would like to see next :)"
+                         ],
+            "context_set": ""
+        },
         {"tag": "goodbye",
          "patterns": ["Bye",
                       "Thank you for your help!",
@@ -272,9 +268,9 @@
                      ],
          "responses": ["Glad I could help! Feel free to reach out to Ilia to tell him how great this project is :)",
                        "Bye👋! You can always send me a chat or reach out to Ilia directly if you have any further questions.",
-                       "Thank you for your time!",
+                       "Bye! Thank you for your time!",
                        "Have a great rest of your day👋! Hope I've helped😁",
-                       "Very nice to meet you! We've got a great thing going here, lets keep in touch :)"
+                       "Bye! Very nice chatting with you! We've got a great thing going here, lets keep in touch :)"
                       ],
          "context_set": ""
         }
