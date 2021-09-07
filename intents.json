@@ -77,7 +77,8 @@
                          "show me Ilia's projects",
                          "can I have a look at some of the projects Ilia has wroked on",
                          "where do I go to see Ilia's projects",
-                         "where do I see Ilia's projects"
+                         "where do I see Ilia's projects",
+                         "send the projects widget again please"
                         ],
             "responses": ["Ilia loves to challege himself by taking on new projects. Here are brief descriptions of his notable projects💡. If you would like to get more details on a specific project, send me a quick message asking about it below :)"],
             "context_set": ""
@@ -199,7 +200,9 @@
                       "Opta",
                       "What did Ilia do for his software developer co-op",
                       "How was Ilia's four month computer science job",
-                      "Talk about Ilia's co-op work experience"
+                      "Talk about Ilia's co-op work experience",
+                      "can you send the work experience widget again please",
+                      "send the work experience widget"
                      ],
          "responses": ["Some info about Ilia's work experience 💼"],
          "context_set": ""
@@ -239,7 +242,8 @@
                          "Ilia Resume pdf",
                          "show me Ilia's resume",
                          "give me Ilia's resume PDF",
-                         "give Ilia resume"
+                         "give Ilia resume",
+                         "can you send the resume again?"
                         ],
             "responses": ["Here's a downloadable PDF of Ilia's resume📝"],
             "context_set": ""
