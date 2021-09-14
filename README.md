@@ -36,4 +36,6 @@ Intents I want to use in the future but don't have the frontend for yet:
     "responses": ["😳 Looks like you found a feature Ilia hasn't finished building yet. For now lets just move on pretend this never happened ..."],
     "context_set": "Here are some other things I can help you with"
 },
+
+Have a quick chat with IliaBOT for an interactive way to get some insights about myself and my resume!
 -->

@@ -1,6 +1,6 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day", "hello resume chatbot", "good morning", "morning"],
+         "patterns": ["Hi", "Hey there", "Whats up?", "hello!", "Good Day", "hello resume chatbot", "good morning", "morning", "heyo", "heyy", "Hii"],
          "responses": ["hello hello👋!", "Hi👋, how can I help?", "Howdy🤠!", "Hi there, how may I be of service?", "Hello hello! What can I do for you?"],
          "context_set": ""
         },
@@ -249,10 +249,22 @@
             "context_set": ""
         },
         {"tag": "no",
-            "patterns": ["no", "nope", "nah", "No, I don't"],
+            "patterns": ["no", "nope", "nah", "No, I don't", "no I don't want to see that", "No not that", "no thats wrong"],
             "responses": ["Ok, sorry. Carry on then :)",
                           "Alright, let me know if there is anything else I can help you with then :)",
                           "Ok, my apologies. You can go ahead and send me a chat of what you would like to see next :)"
+                         ],
+            "context_set": ""
+        },
+        {"tag": "info_on_feedback",
+            "patterns": ["what are those buttons in the top right?",
+                         "what are those checkmarks buttons for?",
+                         "how do I give feedback to responses?",
+                         "how does the feedback system work?",
+                         "What is that checkmark and X for up there?",
+                         "why are the green and red button there?"
+                        ],
+            "responses": ["The checkmark and X you see in the top right after sending a message can be used to provide feedback on whether my response was correct or not. This feedback helps me get smarter and would be much appreciated!"
                          ],
             "context_set": ""
         },
@@ -271,7 +283,7 @@
                       "I've got to go now"
                      ],
          "responses": ["Glad I could help! Feel free to reach out to Ilia to tell him how great this project is :)",
-                       "Bye👋! You can always send me a chat or reach out to Ilia directly if you have any further questions.",
+                       "Bye👋! You can always send me a chat or reach out to Ilia directly if you have any further questions!",
                        "Bye! Thank you for your time!",
                        "Have a great rest of your day👋! Hope I've helped😁",
                        "Bye! Very nice chatting with you! We've got a great thing going here, lets keep in touch :)"
