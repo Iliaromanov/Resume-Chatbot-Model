@@ -7,6 +7,12 @@ The web app repo for this project can be found at https://github.com/Iliaromanov
 
 The repo for the NLP pipeline API I built as a microservice for this project's web app utilizing the NLP pipelines developed in this repository can be found at https://github.com/Iliaromanov/nlp-pipeline-API
 
+![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=Python)
+![Tensorflow](https://img.shields.io/badge/-Tensorflow-05122A?style=flat&logo=Tensorflow)
+![Scikit](https://img.shields.io/badge/-Scikit_Learn-05122A?style=flat&logo=Scikit_Learn)
+![NLTK](https://img.shields.io/badge/-NLTK-05122A?style=flat&logo=NLTK)
+
+
 ## Installation and Setup for CLI Usage
 
 > `pip install -r requirements.txt`
