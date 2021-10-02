@@ -9,6 +9,7 @@ The repo for the NLP pipeline API I built as a microservice for this project's w
 
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=Python)
 ![Tensorflow](https://img.shields.io/badge/-Tensorflow-05122A?style=flat&logo=Tensorflow)
+![Keras](https://img.shields.io/badge/-Keras-05122A?style=flat&logo=Keras)
 ![Scikit](https://img.shields.io/badge/-Scikit_Learn-05122A?style=flat&logo=Scikit_Learn)
 ![NLTK](https://img.shields.io/badge/-NLTK-05122A?style=flat&logo=NLTK)
 
