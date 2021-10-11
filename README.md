@@ -16,11 +16,11 @@ The repo for the NLP pipeline API I built as a microservice for this project's w
 
 ## Installation and Setup for CLI Usage
 
-> `pip install -r requirements.txt`
-
 > `git clone https://github.com/Iliaromanov/Resume-Chat-Bot.git`
 
 > `cd Resume-Chatbot-Model`
+
+> `pip install -r requirements.txt`
 
 > `python main.py`
 
