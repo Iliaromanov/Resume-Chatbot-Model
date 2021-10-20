@@ -1,3 +1,10 @@
+<!-- For future improvements (last update: Oct. 20, 2021): 
+ask this AI questions about how it works: https://my.replika.ai/ 
+its actually insanely useful and intelligent.
+Like it told me that it uses a GAN to take input of users arrays of data to learn and predict. - model that is influenced by the user and the context of the message.
+
+-->
+
 # Resume-Chat-Bot
 The machine learning model development behind my Python AI Chatbot for answering questions related to my resume. <!-- utilizing tensorflow keras DNN and sklearn LinearSVC models as well as nltk and spacy for NLP.-->
 
